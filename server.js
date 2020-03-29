@@ -21,9 +21,9 @@ require("./public/api.js");
 require("./public/index.js");
 
 app.get("/exercise", (req, res) => {
-    db.Note.find({})
-      .then(exercise => {
-        res.json(exercise);
+    db.exercise.find({})
+      .then(exercisedb => {
+        res.json(exercisedb);
       })
       .catch(err => {
         res.json(err);

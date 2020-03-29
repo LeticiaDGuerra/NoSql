@@ -17,8 +17,8 @@ mongoose.connect(MONGODB_URI, {
     useFindAndModify: false
 })
 
-require("./public/api")(app);
-require("./public/index")(app);
+require("./public/api.js");
+require("./public/index.js");
 
 app.listen(PORT, function(){
     console.log(`App listening on Port ${PORT}!`);

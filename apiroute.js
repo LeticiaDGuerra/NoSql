@@ -1,6 +1,6 @@
-const Workout = require("../models/workout.js")
+const Workout = require("./public/workout")
 
-
+module.exports = function (app) {
 
     app.get("/api/workouts", function (req, res) {
         Workout.find()
@@ -33,3 +33,4 @@ const Workout = require("../models/workout.js")
                 res.json(err)
             })
     });
+}

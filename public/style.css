@@ -5,19 +5,28 @@
   margin: 0;
   padding: 0;
 }
-
+body{
+  background-color: #FFB400;
+}
 html,
 body,
 .wrapper {
   height: 100%;
 }
-
+.wrapper {
+  background-color: transparent;
+  padding-bottom: 100px;
+}
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Bebas Neue', cursive; */
+font-family: 'Fredoka One', cursive;
+/* font-family: 'Permanent Marker', cursive; */
+/* font-family: 'Gochi Hand', cursive;  */
 }
 
 nav {
-  background-color: #5793fd;
+  background-color: pink;
   color: #ffffff;
   height: 80px;
   padding: 10px;
@@ -95,10 +104,6 @@ input {
   background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
 }
 
-.wrapper {
-  background-color: #f2f8ff;
-  padding-bottom: 100px;
-}
 
 .card.m-auto,
 .m-auto {
@@ -424,7 +429,24 @@ form > button {
 .resistance-form {
   padding: 10px;
 }
-
+.ui.blue.button, .ui.blue.buttons .button {
+  background-color:pink;
+  color: #fff;
+  text-shadow: none;
+  background-image: none;
+}
+.huge.ui.blue.button {
+  background-color:pink;
+  color: #fff;
+  text-shadow: none;
+  background-image: none;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 @keyframes toast {
   50% {
     opacity: 1;
